@@ -20,9 +20,8 @@ include_directories(${sciplot_content_SOURCE_DIR})
 
 # Add Eigen as an external dependency
 FetchContent_Declare(eigen_content
-  GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
-  GIT_TAG        3147391d946bb4b6c68edd901f2add6ac1f31f8c # 3.4.0
-  GIT_PROGRESS   1
+  URL     https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.bz2 # 3.4.0
+  URL_MD5 132dde48fe2b563211675626d29f1707
 )
 FetchContent_GetProperties(eigen_content)
 if(NOT eigen_content_POPULATED)
