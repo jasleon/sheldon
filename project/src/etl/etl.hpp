@@ -1,8 +1,10 @@
 #pragma once
 #include <string>
+#include "csv.hpp"
 
 class ETL {
     public:
         ETL(std::string filename);
-        std::string filename_;
+        void show();
+        csv::CSVReader reader_;
 };
