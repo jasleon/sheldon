@@ -34,6 +34,7 @@ include_directories(${eigen_content_SOURCE_DIR})
 FetchContent_Declare(csv_parser_content
   GIT_REPOSITORY https://github.com/vincentlaucsb/csv-parser.git
   GIT_TAG        ea547fdb16c7baf99bd9ced5febba52cc5da3ca3 # 2.1.3
+  GIT_SUBMODULES ""
   GIT_PROGRESS   1
 )
 FetchContent_GetProperties(csv_parser_content)
