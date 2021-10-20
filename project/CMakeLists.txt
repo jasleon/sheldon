@@ -47,3 +47,8 @@ add_executable(helloSciplot src/examples/sciplot.cpp)
 add_executable(helloEigen src/examples/eigen.cpp)
 add_executable(helloCsv src/examples/csv_parser.cpp)
 target_link_libraries(helloCsv csv)
+
+add_subdirectory(src/etl)
+include_directories(src/etl)
+add_executable(helloEtl src/examples/etl.cpp)
+target_link_libraries(helloEtl etl)
