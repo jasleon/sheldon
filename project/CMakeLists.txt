@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.2)
 
 project(sheldon LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
-set(FETCHCONTENT_QUIET FALSE)
 
 # Add sciplot as an external dependency
 include(FetchContent) # If not included already
+set(FETCHCONTENT_QUIET FALSE)
 FetchContent_Declare(sciplot_content
   GIT_REPOSITORY https://github.com/sciplot/sciplot.git
   GIT_TAG        d568f1f5c4708e824ef9bfe44e3246a6862ebe97 # master
