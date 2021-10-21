@@ -4,7 +4,8 @@
 
 class ETL {
     public:
-        ETL(std::string filename);
+        ETL(std::string filename, bool no_header = false);
+        ~ETL();
         void show();
-        csv::CSVReader reader_;
+        csv::CSVReader *reader_;
 };
