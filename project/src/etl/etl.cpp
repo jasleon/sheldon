@@ -35,3 +35,15 @@ void ETL::load() {
     csv.push_back(values);
   }
 }
+
+Eigen::MatrixXd ETL::to_matrix() {
+  const size_t rows = csv.size();
+  const size_t columns = csv[0].size();
+  Eigen::MatrixXd matrix(rows, columns);
+  for (size_t i = 0; i < rows; ++i) {
+    for (size_t j = 0; j < columns; ++j) {
+      matrix(i, j) = csv[i][j];
+    }
+  }
+  return matrix;
+}
