@@ -19,6 +19,9 @@ int main(int argc, char **argv) {
   // Create a Plot object
   sciplot::Plot plot;
 
+  // Set the size of the plot
+  plot.size(640, 480);
+
   // Set color palette
   plot.palette("set2");
 
